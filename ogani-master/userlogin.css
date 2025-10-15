@@ -1,0 +1,187 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f8f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container === */
+.login-container {
+  width: 380px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Banner Section === */
+.banner {
+  position: relative;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.banner-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.img-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-card img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.banner-text {
+  color: #fff;
+  text-align: right;
+}
+
+.banner-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* === Form Section === */
+.form-section {
+  padding: 25px 25px 35px;
+  text-align: center;
+}
+
+.form-section h2 {
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* === Input === */
+label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #ccc;
+  padding: 10px 6px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.phone-input:focus-within {
+  border-color: #4caf50;
+}
+
+.country-code {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.phone-input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 15px;
+  background: transparent;
+}
+
+/* === Button === */
+.continue-btn {
+  width: 100%;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #43a047;
+}
+
+/* === Terms === */
+.terms {
+  font-size: 12px;
+  color: #666;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.terms a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (max-width: 420px) {
+  .login-container {
+    width: 90%;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .banner-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+}

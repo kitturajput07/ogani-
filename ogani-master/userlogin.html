@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Ogani Fashion</title>
+  <link rel="stylesheet" href="userlogin.css" />
+  <script src="server.js" defer></script>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Banner Section -->
+    <div class="banner">
+      <div class="banner-images">
+        <div class="img-card">
+          <img src="https://cdn.pixabay.com/photo/2016/03/27/21/16/woman-1284411_1280.jpg" alt="Clothes 1" />
+          <span class="price-tag">₹499</span>
+        </div>
+        <div class="img-card">
+          <img src="https://cdn.pixabay.com/photo/2016/03/09/09/30/fashion-1246868_1280.jpg" alt="Clothes 2" />
+          <span class="price-tag">₹699</span>
+        </div>
+        <div class="img-card">
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/15/47/man-1845432_1280.jpg" alt="Clothes 3" />
+          <span class="price-tag">₹799</span>
+        </div>
+        <div class="img-card">
+          <img src="https://cdn.pixabay.com/photo/2017/08/06/00/44/people-2587836_1280.jpg" alt="Clothes 4" />
+          <span class="price-tag">₹899</span>
+        </div>
+      </div>
+      <div class="banner-text">
+        <h3>Great Quality</h3>
+        <p>Lowest Prices</p>
+      </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-section">
+      <h2>Sign Up to view your profile</h2>
+      <form>
+        <label for="phone">Country</label>
+        <div class="phone-input">
+          <span class="country-code">IN +91</span>
+          <input type="tel" id="phone" placeholder="Phone Number" maxlength="10" required />
+        </div>
+        <button type="submit" class="continue-btn">Continue</button>
+      </form>
+
+      <p class="terms">
+        By continuing, you agree to Ogani’s
+        <a href="#">Terms & Conditions</a> and
+        <a href="#">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
