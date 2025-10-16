@@ -7,7 +7,13 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "keywords": ["ogani", "express", "nodejs", "render", "website"],
+  "keywords": [
+    "ogani",
+    "express",
+    "nodejs",
+    "render",
+    "website"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
