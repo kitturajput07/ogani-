@@ -16,8 +16,8 @@ const port = 5000;
 
 
 
-
-app.use(express.static(path.join(__dirname)));
+// Serve static files from the "public" folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
