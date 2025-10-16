@@ -1,23 +1,25 @@
 {
   "name": "ogani-master",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Ogani web app powered by Node.js and Express",
+  "main": "app.js",
   "scripts": {
-  "start": "node app.js"
-}
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ogani", "express", "nodejs", "render", "website"],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "mongoose": "^8.19.1",
-    "open": "^10.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
